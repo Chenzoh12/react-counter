@@ -13,29 +13,14 @@
             render() {
                 return (
                     <div>
-                        <h1>Hello World!</h1>
-                    </div>
-                );
-            }
-        }
-        
-        class Assignment3 extends React.Component {
-            render() {
-                return (
-                    <div>
-                        <h1>Assignment 3</h1>
-                        <ol>
-                            <li>React components must return one element</li>
-                            <li>We must stack all elements to be returned within one main element</li>
-                            <li>This is an ordered list returned in a div tag</li>
-                        </ol>
+                        <h1>Hello {this.props.name}!</h1>
                     </div>
                 );
             }
         }
             
         ReactDOM.render(
-            <Assignment3 />, document.getElementById('app')
+            <Greeting name="Bloc Student"/>, document.getElementById('app')
         );
        
      </script>
